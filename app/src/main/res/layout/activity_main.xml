@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Pilihan User"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/batu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/batu" />
+
+            <ImageButton
+                android:id="@+id/kertas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kertas" />
+
+            <ImageButton
+                android:id="@+id/gunting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gunting" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="..."
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="Pilihan CPU"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/cpu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="..."
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_above="@+id/adu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="156dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="..."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/adu"
+        android:layout_above="@+id/reset"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="ADU"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="RESET"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
